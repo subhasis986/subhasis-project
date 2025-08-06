@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body {
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+
+        .container {
+            width: 400px;
+            height: 300px;
+            border: 1px dashed black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:10px;
+
+        }
+        .box{
+            background-color: yellow;
+            height:100px;
+            width:100px;
+            border:1px dashed black;
+            text-align: center;
+        }
+        @media(max-width:768px){
+            body{
+                background-color: #fff;
+            }
+            .container{
+                width: 60%;
+                height: 80vh;
+                display: flex;
+                flex-direction: column;
+            }
+        @media(max-width:400px){
+            body{
+                background-color: lightcoral;
+            }
+            .box{
+                width: 30%;
+                height: 25%;
+            }
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+    </div>
+
+
+</body>
+
+</html>
